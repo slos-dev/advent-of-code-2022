@@ -93,14 +93,14 @@ fun main() {
         return result
     }
     fun part1(input: List<String>): Int {
-        var result: Int = 0
+        var result: Int
         val visible = populateVisible(input)
         result = countVisible(visible)
         return result
     }
 
     fun part2(input: List<String>): Int {
-        var result: Int = 0
+        var result: Int
         result = calculate(input)
         return result    
     }

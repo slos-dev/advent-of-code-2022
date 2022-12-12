@@ -52,7 +52,7 @@ fun main() {
     }
 
     fun part2(input: List<String>): Long {
-        var result: Long = 0
+        var result: Long
         val stack = mutableListOf<Long>()
         val dirSize = mutableListOf<Long>()
         for(line in input) {

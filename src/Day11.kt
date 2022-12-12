@@ -54,7 +54,7 @@ fun main() {
         }
     }
     fun part1(input: List<String>): Long {
-        var result: Long = 0
+        var result: Long
         val parsedInput = parseInput(input)
         val count: Array<Long> = Array<Long>(parsedInput.count()){0L}
         for(i in 1..20) doOnce(parsedInput, count, true)
@@ -63,7 +63,7 @@ fun main() {
     }
 
     fun part2(input: List<String>): Long {
-        var result: Long = 0
+        var result: Long
         val parsedInput = parseInput(input)
         val count: Array<Long> = Array<Long>(parsedInput.count()){0L}
         for(i in 1..10000) doOnce(parsedInput, count, false)

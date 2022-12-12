@@ -65,7 +65,7 @@ fun main() {
         return result
     }
     fun part1(input: List<String>): Int {
-        var result: Int = 0
+        var result: Int
         var h = Pair(0, 0)
         var t = Pair(0, 0)
         val visited = mutableSetOf<Pair<Int,Int>>()
@@ -85,7 +85,7 @@ fun main() {
     }
 
     fun part2(input: List<String>): Int {
-        var result: Int = 0
+        var result: Int
         var rope = Array(10){Pair<Int,Int>(0,0)}
         //head = rope[0], tail = rope[9]
         val visited = mutableSetOf<Pair<Int,Int>>()
